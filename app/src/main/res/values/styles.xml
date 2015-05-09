@@ -4,5 +4,119 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
+    <style name='Linearlayout_Style'>
+        <item name='android:orientation'>vertical</item>
+        <item name='android:gravity'>center</item>
+        <item name='android:clickable'>true</item>
+        <item name='android:onClick'>LayoutOnclick</item>
+    </style>
+    <!-- Action Bar Style -->
+    <style name='ActionBar_Style'>
+        <item name='android:layout_width'>match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/forestgreen</item>
+    </style>
+    <style name="ActionBar_CenterText_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="ActionBar_LeftImg_Style">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="ActionBar_RightImg_Style">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="ActionBar_RightText_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
 
+    <!-- common bar style -->
+    <style name="CommonBar_LinearLayout_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="CommonBar_InLinearLayout_Style">
+        <item name="android:weightSum">20.0</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="CommonBar_LeftImg_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_weight">4.0</item>
+    </style>
+    <style name="CommonBar_CenterText_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">12.0</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CommonBar_RightImg_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_weight">4.0</item>
+    </style>
+
+
+    <!-- order page style -->
+    <style name="Order_LeftImg_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="Order_CenterText_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <!-- information style -->
+    <style name="CommonBar_RightImg_Style1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="CommonBar_LeftText_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="CommonBar_RightText_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>
