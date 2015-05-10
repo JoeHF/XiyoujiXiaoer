@@ -75,7 +75,13 @@
         <item name="android:layout_weight">12.0</item>
         <item name="android:textColor">@color/black</item>
     </style>
-
+    <style name="Single_CenterText_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">20.0</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
     <style name="CommonBar_RightImg_Style">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">fill_parent</item>
@@ -118,5 +124,26 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_weight">14</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- camera-->
+    <style name="TwoText_Left">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_weight">4.0</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TwoText_Center">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_weight">12.0</item>
+    </style>
+    <style name="TwoText_Right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_weight">4.0</item>
+
     </style>
 </resources>

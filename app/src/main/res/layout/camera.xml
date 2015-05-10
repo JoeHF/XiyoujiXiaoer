@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/camerahead"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"></LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        />
+    <LinearLayout
+        style="@style/CommonBar_InLinearLayout_Style"
+        android:background="@color/lightgray"
+        >
+        <TextView
+            style="@style/TwoText_Left"
+            android:text="预览"
+            />
+        <ImageView
+            style="@style/CommonBar_CenterText_Style"
+          />
+        <TextView
+            style="@style/TwoText_Right"
+            android:textColor="@color/white"
+            android:background="@color/seagreen"
+            android:text="完成"
+            />
+        </LinearLayout>
+</LinearLayout>

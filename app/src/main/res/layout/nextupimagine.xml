@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgray">
+    <include layout="@layout/upimaginehead"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"></LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        />
+    <LinearLayout
+        style="@style/CommonBar_InLinearLayout_Style">
+
+        <TextView
+
+            style="@style/Single_CenterText_Style"
+            android:text="可以上传四张照片哦"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        />
+    <LinearLayout
+        style="@style/CommonBar_InLinearLayout_Style">
+
+        <TextView
+            android:clickable="true"
+            android:onClick="takephone"
+            style="@style/Single_CenterText_Style"
+            android:text="拍照"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/CommonBar_InLinearLayout_Style">
+
+        <TextView
+            android:clickable="true"
+            android:onClick="searchfromphoto"
+            style="@style/Single_CenterText_Style"
+            android:text="相册"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"></LinearLayout>
+    <LinearLayout
+        style="@style/CommonBar_InLinearLayout_Style">
+
+        <TextView
+            android:clickable="true"
+            android:onClick="click_to_delete"
+            style="@style/Single_CenterText_Style"
+            android:text="取消"
+
+            />
+    </LinearLayout>
+</LinearLayout>
