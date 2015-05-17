@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/roborder_head"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="520dp"
+        android:background="@drawable/map"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            >
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"></LinearLayout>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:gravity="bottom"
+                android:text="订单"
+                android:background="@color/trangrey"
+                />
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="fill_parent"></LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+
+                android:src="@drawable/cross"
+                android:background="@color/trangrey"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"></LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="fill_parent" />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/washcar"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/position"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|left"
+                android:text="直行，至第一个路口左拐"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/position"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|left"
+                android:text="浙A  8888 奥迪6L 黑色"
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical|left"
+                android:text="查看照片"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/phone2"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/trangrey"
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:background="@color/green"
+                android:gravity="center"
+                android:text="马上出发"
+                android:textSize="25dp"
+                android:textColor="@color/blue"
+                /></LinearLayout>
+    </LinearLayout>
+</LinearLayout>
