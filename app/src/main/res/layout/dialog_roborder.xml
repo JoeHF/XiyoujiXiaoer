@@ -40,6 +40,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@color/white"
+        android:orientation="vertical"
         >
         <LinearLayout
             android:layout_width="fill_parent"
@@ -47,20 +48,95 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="fill_parent" />
-           <ImageView
-               android:layout_width=""
-               android:layout_height="" />
+
             <ImageView
                 android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/time"
+                />
+            <ImageView
+                android:layout_width="30dp"
                 android:layout_height="fill_parent" />
             <TextView
                 android:layout_width="160dp"
                 android:layout_height="fill_parent"
-                android:textSize="20dp"
+
                 android:gravity="center_vertical|left"
-                android:text="距离您0.5公里"
+                android:text="3月20日 15：30"
                 />
             </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/mode"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="fill_parent"
+
+                android:gravity="center_vertical|left"
+                android:text="车外清洗"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/recharge"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="fill_parent"
+
+                android:gravity="center_vertical|left"
+                android:text="99元"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+           <TextView
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:gravity="center_vertical|center"
+               android:text="隐藏"
+               />
+
+        </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
