@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionBar_Style">
+
+    <TextView
+        style="@style/ActionBar_CenterText_Style"
+        android:text="西游记"
+        />
+
+    <ImageView
+        style="@style/ActionBar_RightImg_Style"
+
+        android:src="@drawable/location_address"/>
+</RelativeLayout>

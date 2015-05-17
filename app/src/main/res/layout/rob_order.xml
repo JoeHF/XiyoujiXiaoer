@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/roborder_head"/>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="520dp"
+        android:background="@drawable/map"
+         android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            >
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"></LinearLayout>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:gravity="bottom"
+                android:text="订单"
+                android:background="@color/trangrey"
+                />
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="fill_parent"></LinearLayout>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:gravity="bottom"
+                android:text="我的"
+                android:background="@color/trangrey"
+                />
+
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="450dp"></LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="fill_parent"
+             android:background="@color/trangrey"
+             >
+             <ImageView
+             android:layout_width="150dp"
+             android:layout_height="fill_parent" />
+
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_height="fill_parent"
+                  android:background="@color/green"
+                 android:gravity="center"
+                 android:text="接单"
+                 android:textSize="25dp"
+                 android:textColor="@color/blue"
+                 /></LinearLayout>
+        </LinearLayout>
+</LinearLayout>

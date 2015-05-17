@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="fill_parent" />
+        <TextView
+            android:layout_width="40dp"
+            android:textSize="20dp"
+            android:layout_height="fill_parent"
+            android:background="@color/green"
+            android:gravity="center_vertical|left"
+            android:text="实时"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:textSize="20dp"
+            android:gravity="center_vertical|left"
+            android:text="距离您0.5公里"
+            />
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+           <ImageView
+               android:layout_width=""
+               android:layout_height="" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:gravity="center_vertical|left"
+                android:text="距离您0.5公里"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
