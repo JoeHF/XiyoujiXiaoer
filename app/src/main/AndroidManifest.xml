@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xiyoujixiaoer.xiyoujixiaoer">
+    package="com.xiaoer.app">
 
     <application
         android:allowBackup="true"
