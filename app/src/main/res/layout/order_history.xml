@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgrey">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionBar_Style">
+
+    <ImageView
+        style="@style/ActionBar_LeftImg_Style"
+        android:src="@drawable/back"/>
+    <TextView
+        android:id="@+id/title"
+        style="@style/ActionBar_CenterText_Style"
+        android:text="历史订单"
+        />
+
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:background="@color/seagreen"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="服务总单数"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|center_vertical"
+            android:textSize="25dp"
+            android:text="156单"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|center_vertical"
+            android:text="No.1234"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"></LinearLayout>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/mode"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+
+                    android:gravity="center_vertical|left"
+                    android:text="车外清洗"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/position"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="浙A  8888 奥迪6L 黑色"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/mycar"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="浙A  8888 奥迪6L 黑色"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/red"
+                    android:text="费用总额：￥99"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/phone"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|center_vertical"
+            android:text="No.1234"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"></LinearLayout>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/mode"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+
+                    android:gravity="center_vertical|left"
+                    android:text="车外清洗"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/position"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="浙A  8888 奥迪6L 黑色"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/mycar"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="浙A  8888 奥迪6L 黑色"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/red"
+                    android:text="费用总额：￥99"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/phone"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
