@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgray">
+    <include layout="@layout/upimaginehead"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="410dp"
+        android:background="@color/white"></LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/washcar"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/washcar"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/washcar"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/washcar"
+            />
+        </LinearLayout>
+    <LinearLayout
+        style="@style/CommonBar_InLinearLayout_Style"
+        android:background="@color/lightgray"
+        >
+        <TextView
+            style="@style/TwoText_Left"
+            android:text="取消"
+            />
+        <ImageView
+            style="@style/CommonBar_CenterText_Style"
+            android:src="@drawable/camera"
+
+            />
+        <TextView
+            style="@style/TwoText_Right"
+            android:textColor="@color/seagreen"
+
+            android:text="完成"
+            />
+    </LinearLayout>
+</LinearLayout>

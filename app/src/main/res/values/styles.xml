@@ -125,7 +125,7 @@
         <item name="android:layout_weight">14</item>
         <item name="android:textColor">@color/black</item>
     </style>
-    <!-- camera-->
+    <!-- upimagine5-->
     <style name="TwoText_Left">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">fill_parent</item>
