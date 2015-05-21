@@ -13,22 +13,22 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="fill_parent"
-            android:src="@drawable/washcar"
+            android:src="@drawable/mycar"
             />
         <ImageView
             android:layout_width="100dp"
             android:layout_height="fill_parent"
-            android:src="@drawable/washcar"
+            android:src="@drawable/mycar"
             />
         <ImageView
             android:layout_width="100dp"
             android:layout_height="fill_parent"
-            android:src="@drawable/washcar"
+            android:src="@drawable/mycar"
             />
         <ImageView
             android:layout_width="100dp"
             android:layout_height="fill_parent"
-            android:src="@drawable/washcar"
+            android:src="@drawable/mycar"
             />
         </LinearLayout>
     <LinearLayout
@@ -41,7 +41,7 @@
             />
         <ImageView
             style="@style/CommonBar_CenterText_Style"
-            android:src="@drawable/camera"
+            android:src="@drawable/camera1"
 
             />
         <TextView

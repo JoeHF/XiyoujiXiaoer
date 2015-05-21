@@ -73,6 +73,7 @@
             android:onClick="takephone"
             style="@style/Single_CenterText_Style"
             android:text="拍照"
+
             />
     </LinearLayout>
     <LinearLayout

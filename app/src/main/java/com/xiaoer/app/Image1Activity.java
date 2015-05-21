@@ -5,26 +5,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-
-public class MainActivity extends Activity {
+/**
+ * Created by houfang on 2015/4/29.
+ */
+public class Image1Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.upimagine);
     }
-    public void click_to_homepage(View v)
+    public void click_to_upimagine2(View v)
     {
         Intent intent = new Intent();
-        intent.setClass(this, HomepageActivity.class);
+        intent.setClass(this, Image2Activity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out	);
     }
+
 }
-
-
-
-
-
-
-

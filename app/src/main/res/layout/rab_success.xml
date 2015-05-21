@@ -24,6 +24,8 @@
                 android:textSize="20dp"
                 android:gravity="bottom"
                 android:text="订单"
+                android:clickable="true"
+                android:onClick="click_to_myorder"
                 android:background="@color/trangrey"
                 />
             <LinearLayout
@@ -88,6 +90,8 @@
                 android:textColor="@color/blue"
                 android:gravity="center_vertical|left"
                 android:text="查看照片"
+                android:clickable="true"
+                android:onClick="click_to_photo"
                 />
             <ImageView
                 android:layout_width="30dp"
@@ -112,6 +116,8 @@
                 android:layout_width="100dp"
                 android:layout_height="fill_parent"
                 android:background="@color/green"
+                android:clickable="true"
+                android:onClick="click_to_image1"
                 android:gravity="center"
                 android:text="马上出发"
                 android:textSize="25dp"

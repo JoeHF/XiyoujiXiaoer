@@ -35,7 +35,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="fill_parent"
-                        android:src="@drawable/servercar"/>
+                        android:src="@drawable/mycar"/>
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="fill_parent"

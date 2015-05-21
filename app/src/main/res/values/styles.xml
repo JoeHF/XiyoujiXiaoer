@@ -146,4 +146,7 @@
         <item name="android:layout_weight">4.0</item>
 
     </style>
+    <!-- dialog stype -->
+
+
 </resources>

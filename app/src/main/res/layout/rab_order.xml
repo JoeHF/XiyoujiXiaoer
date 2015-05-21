@@ -23,6 +23,8 @@
                 android:layout_height="fill_parent"
                 android:textSize="20dp"
                 android:gravity="bottom"
+                android:clickable="true"
+                android:onClick="click_to_myorder"
                 android:text="订单"
                 android:background="@color/trangrey"
                 />
@@ -56,6 +58,8 @@
                  android:layout_height="fill_parent"
                   android:background="@color/green"
                  android:gravity="center"
+                 android:clickable="true"
+                 android:onClick="click_to_success"
                  android:text="接单"
                  android:textSize="25dp"
                  android:textColor="@color/blue"

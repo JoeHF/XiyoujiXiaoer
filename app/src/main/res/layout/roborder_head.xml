@@ -4,7 +4,7 @@
 
     <TextView
         style="@style/ActionBar_CenterText_Style"
-        android:text="西游记"
+        android:text="洗游记"
         />
 
     <ImageView
