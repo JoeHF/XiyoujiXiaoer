@@ -14,7 +14,7 @@ public class Image2Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upimagine2);
     }
-    public void takephoto(View v)
+    public void click_to_photo(View v)
     {
         Intent intent = new Intent();
         intent.setClass(this, Image3Activity.class);
@@ -22,7 +22,7 @@ public class Image2Activity extends Activity {
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out	);
     }
-    public void searchphoto(View v)
+    public void click_to_search(View v)
     {
         Intent intent = new Intent();
         intent.setClass(this, Image4Activity.class);

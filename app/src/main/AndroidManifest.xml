@@ -44,6 +44,34 @@
         </activity>
         <activity
 
+            android:name=".Image2Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+
+            android:name=".Image3Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+
+            android:name=".Image4Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+
+            android:name=".Image5Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+
             android:name="com.xiaoer.app.MyOrderActivity"
             android:windowSoftInputMode="stateHidden"
             android:label="Xiyouji"
@@ -84,6 +112,15 @@
             android:label="Xiyouji"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+
+            android:name="com.xiaoer.app.ArriveActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
+
 
 </manifest>

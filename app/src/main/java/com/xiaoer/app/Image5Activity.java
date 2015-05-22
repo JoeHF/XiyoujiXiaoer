@@ -8,11 +8,11 @@ import android.view.View;
 /**
  * Created by houfang on 2015/4/29.
  */
-public class Image4Activity extends Activity {
+public class Image5Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.upimagine4);
+        setContentView(R.layout.upimagine5);
     }
     public void click_to_myorder(View v)
     {

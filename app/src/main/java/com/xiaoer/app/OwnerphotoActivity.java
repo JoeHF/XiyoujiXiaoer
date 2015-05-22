@@ -14,5 +14,12 @@ public class  OwnerphotoActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo_success);
     }
-
+    public void click_to_success(View v)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, SuccessActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.abc_fade_in,
+                R.anim.abc_fade_out	);
+    }
 }

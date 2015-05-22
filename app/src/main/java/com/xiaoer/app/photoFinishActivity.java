@@ -14,5 +14,12 @@ public class  photoFinishActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo_finish);
     }
-
+    public void click_to_upimagine2(View v)
+    {
+        Intent intent = new Intent();
+        intent.setClass(this, Image2Activity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.abc_fade_in,
+                R.anim.abc_fade_out	);
+    }
 }

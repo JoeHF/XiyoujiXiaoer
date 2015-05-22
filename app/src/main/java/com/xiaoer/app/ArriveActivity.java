@@ -5,14 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-/**
- * Created by houfang on 2015/4/29.
- */
-public class  SuccessActivity extends Activity {
+public class  ArriveActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.rab_success);
+        setContentView(R.layout.arrive);
     }
 
     public void click_to_photo(View v) {
@@ -49,13 +46,21 @@ public class  SuccessActivity extends Activity {
 
     }
 
-
-    public void click_to_arrive(View v) {
+    public void image1(View v) {
         Intent intent = new Intent();
-        intent.setClass(this, ArriveActivity.class);
+        intent.setClass(this, Image1Activity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.abc_fade_in,
+                R.anim.abc_fade_out);
+
+    }
+    public void click_to_image1(View v) {
+        Intent intent = new Intent();
+        intent.setClass(this, Image1Activity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out);
 
     }
 }
+
