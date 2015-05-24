@@ -1,7 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xiaoer.app">
-
+   <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
+        android:name="com.xiaoer.app.Myapp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -72,6 +75,13 @@
         </activity>
         <activity
 
+            android:name=".Image6Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+
             android:name="com.xiaoer.app.MyOrderActivity"
             android:windowSoftInputMode="stateHidden"
             android:label="Xiyouji"
@@ -80,6 +90,13 @@
         <activity
 
             android:name="com.xiaoer.app.orderHistoryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+
+            android:name="com.xiaoer.app.photoFinishActivity"
             android:windowSoftInputMode="stateHidden"
             android:label="Xiyouji"
             android:screenOrientation="portrait">
@@ -119,7 +136,13 @@
             android:label="Xiyouji"
             android:screenOrientation="portrait">
         </activity>
+        <activity
 
+            android:name="com.xiaoer.app.finishImage2Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 

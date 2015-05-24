@@ -26,7 +26,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical|center"
-                        android:text="给车主洗完澡的爱车拍个照吧"
+                        android:text="给车主没洗澡的爱车拍个照吧"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -70,7 +70,7 @@
 
         <TextView
             android:clickable="true"
-            android:onClick="takephone"
+            android:onClick="click_to_photo"
             style="@style/Single_CenterText_Style"
             android:text="拍照"
 
@@ -81,7 +81,7 @@
 
         <TextView
             android:clickable="true"
-            android:onClick="searchfromphoto"
+            android:onClick="click_to_search"
             style="@style/Single_CenterText_Style"
             android:text="相册"
 

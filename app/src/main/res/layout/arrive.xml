@@ -38,14 +38,12 @@
                 android:gravity="bottom"
                 android:text="我的"
                 android:background="@color/trangrey"
-                android:clickable="true"
-                android:onClick="click_to_showme"
                 />
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"></LinearLayout>
+            android:layout_height="350dp"></LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="30dp"
@@ -65,7 +63,7 @@
                 android:gravity="center_vertical|left"
                 android:text="直行，至第一个路口左拐"
                 />
-            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -86,19 +84,7 @@
                 android:gravity="center_vertical|left"
                 android:text="浙A  8888 奥迪6L 黑色"
                 />
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="fill_parent"
-                android:textColor="@color/blue"
-                android:gravity="center_vertical|left"
-                android:text="查看照片"
-                android:clickable="true"
-                android:onClick="click_to_photo"
-                />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="fill_parent"
-                android:src="@drawable/phone2"/>
+
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -119,9 +105,9 @@
                 android:layout_height="fill_parent"
                 android:background="@color/green"
                 android:clickable="true"
-                android:onClick="click_to_arrive"
+                android:onClick="click_to_image1"
                 android:gravity="center"
-                android:text="马上出发"
+                android:text="已到达"
                 android:textSize="25dp"
                 android:textColor="@color/blue"
                 /></LinearLayout>

@@ -16,9 +16,10 @@
             />
 
     </RelativeLayout>
+
     <LinearLayout
-        android:layout_width='fill_parent'
-        android:layout_height='fill_parent'
+        android:layout_width='400dp'
+        android:layout_height='60dp'
         android:orientation='vertical'
         android:gravity='center_horizontal'
         xmlns:android='http://schemas.android.com/apk/res/android'>
@@ -30,15 +31,7 @@
         android:background="@drawable/switcher_stroke_bg"
         android:padding="1dp">
 
-        <TextView
-            android:id="@+id/text1"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:gravity="center"
-            android:text="预约"
-            android:textColor="@color/white"/>
+
 
         <TextView
             android:id="@+id/text2"
@@ -47,10 +40,142 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:gravity="center"
-            android:text="实时"
+            android:text="预约"
             android:background="@color/white"
             android:textColor="@color/forestgreen"/>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:text="实时"
+            android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|center_vertical"
+            android:text="No.1234"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"></LinearLayout>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/mode"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+
+                    android:gravity="center_vertical|left"
+                    android:text="车外清洗"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/position"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="浙A  8888 奥迪6L 黑色"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/mycar"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="浙A  8888 奥迪6L 黑色"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/red"
+                    android:text="费用总额：￥99"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/phone"
+                    />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

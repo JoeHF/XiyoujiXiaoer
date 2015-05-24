@@ -4,9 +4,16 @@
     android:orientation="vertical"
     android:background="@color/white">
     <include layout="@layout/camerahead"/>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="480dp"></LinearLayout>
+        android:layout_height="430dp"
+
+        >
+  <ImageView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/picturesrc"/>
+        </RelativeLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -26,7 +33,8 @@
         <TextView
             style="@style/TwoText_Right"
             android:textColor="@color/seagreen"
-
+            android:clickable="true"
+            android:onClick="click_to_image6"
             android:text="确定使用"
             />
     </LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/ActionBar_Style">
+
+        <ImageView
+            style="@style/ActionBar_LeftImg_Style"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/title"
+            style="@style/ActionBar_CenterText_Style"
+            android:text="我的洗游记"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:gravity="center"
+        android:background="@drawable/xrbg">
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/head_photo"
+                android:src="@drawable/messi"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="30dip"
+                app:riv_border_width="2dip"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                app:riv_oval="true"
+
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                   android:gravity="left|center_vertical"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:text="小二9527"/>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/orange">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/star"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5.0"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+               </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:onClick="click_to_history"
+            >
+            <TextView
+               android:layout_height="fill_parent"
+               android:layout_width="100dp"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:text="已完成清洗"
+                />
+            <TextView
+                android:id="@+id/num"
+                android:layout_height="fill_parent"
+                android:layout_width="30dp"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/red"
+                android:text="86"
+                />
+            <TextView
+
+                android:layout_height="fill_parent"
+                android:layout_width="30dp"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+
+                android:text="辆"
+                />
+            </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@color/lightgray"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:onClick="click_to_money"
+            >
+            <TextView
+                android:layout_height="fill_parent"
+                android:layout_width="100dp"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:text="服务金额："
+                />
+            <TextView
+                android:id="@+id/summoney"
+                android:layout_height="fill_parent"
+                android:layout_width="90dp"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/red"
+                android:text="¥ 9999"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"></LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="25dp"
+        android:clickable="true"
+        android:onClick="click_to_out"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/textview_red"
+        android:text="退出登录"/>
+</LinearLayout>

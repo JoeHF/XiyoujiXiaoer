@@ -6,7 +6,7 @@
     <include layout="@layout/camerahead"/>
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="480dp"></LinearLayout>
+        android:layout_height="430dp"></LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -27,6 +27,8 @@
             style="@style/TwoText_Right"
             android:textColor="@color/white"
             android:background="@color/seagreen"
+            android:clickable="true"
+            android:onClick="click_to_image6"
             android:text="完成"
             />
         </LinearLayout>

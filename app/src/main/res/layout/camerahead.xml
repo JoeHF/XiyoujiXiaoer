@@ -9,9 +9,7 @@
         style="@style/ActionBar_CenterText_Style"
         android:text="相机胶卷"
         />
-    <ImageView
-        style="@style/ActionBar_RightImg_Style"
-        android:src="@drawable/setting"/>
+
     <TextView
         style="@style/ActionBar_RightText_Style"
         android:text="取消"

@@ -9,10 +9,12 @@ import android.view.View;
  * Created by houfang on 2015/4/29.
  */
 public class Image2Activity extends Activity {
-    @Override
+    private Myapp myApp;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upimagine2);
+        myApp = (Myapp) getApplication();
+        myApp.setLabel("0");
     }
     public void click_to_photo(View v)
     {
