@@ -20,9 +20,9 @@ public class Image4Activity extends Activity {
     {
         String a=myapp.getLabel();
         Intent intent = new Intent();
-        if(a=="0")
+        if(a.equals("0"))
             intent.setClass(this, Image6Activity.class);
-        if(a=="1")
+        if(a.equals("1"))
             intent.setClass(this, photoFinish1Activity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.abc_fade_in,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<color name="main_theme_color">#49AEED </color>
-<color name="main_theme_pressed_color">#54B9F8 </color>
+    <color name="main_theme_color">#49b01d </color>
+    <color name="main_theme_tab_color">#43a21b </color>
 <color name="bar_text_color">#49AEED </color>
 <color name="isHoliday_BgColor">#E0E0E0</color>
 <color name="white">#FFFFFF</color><!--白色 --> 

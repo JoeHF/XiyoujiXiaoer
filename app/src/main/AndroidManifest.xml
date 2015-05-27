@@ -143,6 +143,13 @@
             android:label="Xiyouji"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+
+            android:name="com.xiaoer.app.ImageGalleryDemoActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 

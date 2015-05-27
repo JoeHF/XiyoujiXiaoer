@@ -10,6 +10,18 @@ public class Myapp extends Application{
     private String mylabel ;
     private List mylist1;
     private List mylist2;
+    private int  num1=0;
+    private int num2=0;
+
+
+
+
+
+
+
+
+
+
     public String getLabel(){
         return mylabel;
     }
@@ -34,10 +46,37 @@ public class Myapp extends Application{
         mylist2=list;
 
     }
+    public int getNum1()
+    {
+        return num1;
+    }
+    public int getNum2()
+    {
+        return num2;
+    }
+    public void setNum1(int number)
+    {
+       num1=number;
+
+    }
+    public void setNum2(int number)
+    {
+        num2=number;
+
+    }
+    public void intialize()
+    {
+        num1=0;
+        num2=0;
+        mylist1=new ArrayList();
+        mylist2=new ArrayList();
+    }
     @Override
     public void onCreate() {
        mylist1=new ArrayList();
-        mylist2=new ArrayList();// TODO Auto-generated method stub
+        mylist2=new ArrayList();
+
+        // TODO Auto-generated method stub
         super.onCreate();
         setLabel("0"); //初始化全局变量
     }

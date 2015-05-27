@@ -36,12 +36,34 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
                         <ImageView
-                            android:layout_width="80dp"
+                            android:id="@+id/picture1"
+                            android:layout_width="10dp"
                             android:layout_height="fill_parent"
+                            android:visibility="invisible"
                             android:src="@drawable/mycar"/>
                         <ImageView
+                            android:id="@+id/picture2"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:visibility="invisible"
+                            android:src="@drawable/mycar"/>
+                        <ImageView
+                            android:id="@+id/picture3"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:visibility="invisible"
+                            android:src="@drawable/mycar"/>
+                        <ImageView
+                            android:id="@+id/picture4"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:visibility="invisible"
+                            android:src="@drawable/mycar"/>
+                        <ImageView
+                            android:id="@+id/picture5"
                             android:layout_width="80dp"
                             android:layout_height="fill_parent"
+                            android:visibility="invisible"
                             android:clickable="true"
                             android:onClick="click_to_upimage2"
                             android:src="@drawable/font"/>
@@ -58,7 +80,7 @@
         android:layout_marginRight="50dp"
         android:textSize="25dp"
         android:clickable="true"
-        android:onClick="click_to_wash"
+        android:onClick="click_to_homepage"
         android:textColor="@color/white"
         android:gravity="center_horizontal"
         android:layout_marginTop="15dp"

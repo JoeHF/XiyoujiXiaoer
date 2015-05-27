@@ -18,7 +18,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="90dp"
-        android:background="@color/seagreen"
+        android:background="@color/main_theme_tab_color"
         android:orientation="vertical"
         >
         <LinearLayout

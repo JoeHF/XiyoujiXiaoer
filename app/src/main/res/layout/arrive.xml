@@ -29,7 +29,7 @@
                 android:background="@color/trangrey"
                 />
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="210dp"
                 android:layout_height="fill_parent"></LinearLayout>
             <TextView
                 android:layout_width="40dp"
@@ -43,7 +43,7 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="350dp"></LinearLayout>
+            android:layout_height="390dp"></LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="30dp"
@@ -97,19 +97,19 @@
             android:background="@color/trangrey"
             >
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="fill_parent" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/green"
                 android:clickable="true"
                 android:onClick="click_to_image1"
                 android:gravity="center"
                 android:text="已到达"
-                android:textSize="25dp"
-                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textColor="@color/main_theme_tab_color"
                 /></LinearLayout>
     </LinearLayout>
 </LinearLayout>

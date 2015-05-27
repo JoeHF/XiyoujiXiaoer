@@ -53,11 +53,27 @@
         />
     <LinearLayout
         style="@style/CommonBar_InLinearLayout_Style">
-
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="fill_parent" />
         <TextView
+            android:layout_height="fill_parent"
+            android:layout_width="90dp"
+            android:text="你还可以上传"
+            android:gravity="center|left"
+            />
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
 
-            style="@style/Single_CenterText_Style"
-            android:text="可以上传四张照片哦"
+            android:gravity="center|left"
+            />
+        <TextView
+            android:layout_height="fill_parent"
+            android:layout_width="90dp"
+            android:text="张照片"
+            android:gravity="center|left"
             />
     </LinearLayout>
     <View
@@ -76,6 +92,11 @@
 
             />
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        />
     <LinearLayout
         style="@style/CommonBar_InLinearLayout_Style">
 

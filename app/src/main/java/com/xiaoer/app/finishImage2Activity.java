@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 /**
  * Created by houfang on 2015/4/29.
@@ -15,6 +16,12 @@ public class finishImage2Activity extends Activity {
         setContentView(R.layout.finish_image2);
         myApp = (Myapp) getApplication();
         myApp.setLabel("1");
+        int number=myApp.getNum2();
+        TextView image1 = (TextView) findViewById(R.id.number);
+        number=4-number;
+        String numbertext=String.valueOf(number);
+        image1.setText(numbertext);
+
     }
     public void click_to_photo(View v)
     {

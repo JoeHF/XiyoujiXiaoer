@@ -27,7 +27,7 @@
                 android:background="@color/trangrey"
                 />
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="260dp"
                 android:layout_height="fill_parent"></LinearLayout>
             <ImageView
                 android:layout_width="40dp"
@@ -128,8 +128,8 @@
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="fill_parent"
-                android:background="@color/green"
+                android:layout_height="wrap_content"
+                android:background="@color/main_theme_tab_color"
                 android:gravity="center"
                 android:text="马上出发"
                 android:textSize="25dp"

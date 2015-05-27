@@ -14,7 +14,7 @@
     <style name='ActionBar_Style'>
         <item name='android:layout_width'>match_parent</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:background">@color/forestgreen</item>
+        <item name="android:background">@color/main_theme_tab_color</item>
     </style>
     <style name="ActionBar_CenterText_Style">
         <item name="android:layout_width">wrap_content</item>

@@ -29,7 +29,7 @@
                 android:background="@color/trangrey"
                 />
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="250dp"
                 android:layout_height="fill_parent"></LinearLayout>
             <TextView
                 android:layout_width="40dp"
@@ -47,7 +47,7 @@
         </LinearLayout>
        <LinearLayout
            android:layout_width="match_parent"
-           android:layout_height="400dp"></LinearLayout>
+           android:layout_height="430dp"></LinearLayout>
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="fill_parent"
