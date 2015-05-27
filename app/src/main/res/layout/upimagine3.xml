@@ -30,10 +30,11 @@
 
             />
         <TextView
+            android:id="@+id/finish"
             style="@style/TwoText_Right"
-            android:textColor="@color/seagreen"
+            android:textColor="@color/white"
            android:onClick="click_to_image5"
-            android:clickable="true"
+            android:clickable="false"
             android:text="完成"
             />
     </LinearLayout>

@@ -48,6 +48,7 @@ import android.widget.Button;
 
 import android.widget.FrameLayout;
 
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -103,6 +104,10 @@ public void onClick(View v) {
 // get an imagefrom the camera
 
         mCamera.takePicture(null, null, mPicture);
+       TextView text=(TextView)  findViewById(R.id.finish);
+    text.setBackgroundColor(0x49b01d);
+    text.setClickable(true);
+
 
         }
 
@@ -434,6 +439,7 @@ public void onPause() {
         }
             public void click_to_image5(View v)
             {
+
                 Log.i("click", "photo sure");
                 Bundle mBundle=new Bundle();
                 mBundle.putString("picturesrc",picturesrc);

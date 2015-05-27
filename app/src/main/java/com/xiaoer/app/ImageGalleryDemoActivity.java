@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +34,9 @@ public void click_to_picture(View v)
             android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
     startActivityForResult(i, RESULT_LOAD_IMAGE);
+    TextView text=(TextView)  findViewById(R.id.finish);
+    text.setBackgroundColor(0x49b01d);
+    text.setClickable(true);
 }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

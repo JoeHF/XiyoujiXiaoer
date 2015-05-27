@@ -180,6 +180,13 @@
             android:label="Xiyouji"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+
+            android:name="com.xiaoer.app.MyOrder1Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Xiyouji"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 

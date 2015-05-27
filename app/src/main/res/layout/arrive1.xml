@@ -8,43 +8,42 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
-    <com.baidu.mapapi.map.MapView
-        android:id="@+id/bmapView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:clickable="true" />
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="40dp">
-
-        <TextView
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="15dp"
-            android:textSize="20dp"
-            android:layout_centerVertical="true"
-
-            android:text="订单"
-            android:background="@color/trangrey" />
-
-        <ImageView
-            android:layout_alignParentRight="true"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:clickable="true"
-            android:onClick="click_to_success"
-            android:src="@drawable/cross"
-            android:background="@color/trangrey"
-            />
-
-    </RelativeLayout>
 
 
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
 
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
 
+                android:text="订单"
+                android:background="@color/trangrey" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:text="我的"
+                android:background="@color/trangrey"
+                android:clickable="true"
+                android:onClick="click_to_showme" />
+
+        </RelativeLayout>
 
         <LinearLayout
             android:orientation="vertical"
@@ -97,35 +96,44 @@
                     android:gravity="center_vertical|left"
                     android:text="浙A  8888 奥迪6L 黑色"
                     />
-                <TextView
-                    android:layout_width="80dp"
-                    android:layout_height="fill_parent"
-                    android:textColor="@color/blue"
-                    android:gravity="center_vertical|left"
-                    android:text="查看照片"
 
-                    />
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="fill_parent"
-                    android:src="@drawable/phone2"/>
             </LinearLayout>
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:background="@color/green"
-                    android:gravity="center"
-                    android:layout_centerHorizontal="true"
-
-                    android:text="马上出发"
-                    android:textSize="25dp"
-                    android:textColor="@color/blue"
-                    />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@color/green"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="click_to_image1"
+                android:text="已到达"
+                android:textSize="25dp"
+                android:textColor="@color/blue"
+                />
             </RelativeLayout>
         </LinearLayout>
-
     </RelativeLayout>
+    <!--
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="40dp"
+       >
+       <LinearLayout
+           android:layout_width="10dp"
+           android:layout_height="fill_parent"></LinearLayout>
+
+       <LinearLayout
+           android:layout_width="250dp"
+           android:layout_height="fill_parent"></LinearLayout>
+
+
+
+           />
+
+   </LinearLayout> -->
+
+
 </LinearLayout>

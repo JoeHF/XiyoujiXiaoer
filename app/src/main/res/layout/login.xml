@@ -2,45 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/lightgray">
 
 
     <include layout="@layout/loginhead"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
+        android:background="@drawable/login2"
         android:orientation="vertical">
        <LinearLayout
            android:layout_width="fill_parent"
-           android:layout_height="20dp"></LinearLayout>
+           android:layout_height="30dp"></LinearLayout>
          <LinearLayout
              android:layout_width="fill_parent"
-             android:layout_height="60dp">
+             android:layout_height="80dp">
              <LinearLayout
-             android:layout_width="140dp"
+             android:layout_width="120dp"
              android:layout_height="fill_parent"></LinearLayout>
-             <ImageView
-                 android:layout_width="80dp"
-                 android:layout_height="fill_parent"
-                 android:background="@drawable/login"
-                 />
+
 
          </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-            <LinearLayout
-                android:layout_width="140dp"
-                android:layout_height="fill_parent"></LinearLayout>
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="fill_parent"
-               android:text="小二端登录"
-                />
-            </LinearLayout>
+
         </LinearLayout>
     <View
         android:layout_width="match_parent"

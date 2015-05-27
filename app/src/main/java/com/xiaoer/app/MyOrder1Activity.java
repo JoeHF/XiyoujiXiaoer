@@ -8,16 +8,16 @@ import android.view.View;
 /**
  * Created by houfang on 2015/4/29.
  */
-public class  MyOrderActivity extends Activity {
+public class  MyOrder1Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myorder);
     }
-    public void click_to_myorder1(View v)
+    public void click_to_myorder(View v)
     {
         Intent intent = new Intent();
-        intent.setClass(this, MyOrder1Activity.class);
+        intent.setClass(this, MyOrderActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out	);

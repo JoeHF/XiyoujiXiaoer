@@ -33,10 +33,11 @@
             style="@style/CommonBar_CenterText_Style"
           />
         <TextView
+            android:id="@+id/finish"
             style="@style/TwoText_Right"
             android:textColor="@color/white"
-            android:background="@color/seagreen"
-            android:clickable="true"
+            android:background="@color/white"
+            android:clickable="false"
             android:onClick="click_to_image6"
             android:text="完成"
             />
