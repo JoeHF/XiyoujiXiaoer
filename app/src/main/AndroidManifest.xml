@@ -9,6 +9,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="WCKeHbhaWkKRlFOtRcrllFpB" />
         <activity
             android:name="com.xiaoer.app.MainActivity"
             android:label="@string/app_name"
