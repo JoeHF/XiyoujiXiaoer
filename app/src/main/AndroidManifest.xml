@@ -103,7 +103,7 @@
         </activity>
         <activity
 
-            android:name="com.xiaoer.app.photoFinishActivity"
+            android:name="com.xiaoer.app.photoFinish1Activity"
             android:windowSoftInputMode="stateHidden"
             android:label="Xiyouji"
             android:screenOrientation="portrait">
