@@ -105,8 +105,11 @@ public void onClick(View v) {
 
         mCamera.takePicture(null, null, mPicture);
        TextView text=(TextView)  findViewById(R.id.finish);
-    text.setBackgroundColor(0x49b01d);
-    text.setClickable(true);
+
+
+
+     text.setBackgroundColor(R.color.main_theme_tab_color);
+     text.setClickable(true);
 
 
         }

@@ -72,8 +72,18 @@ public class  ArriveActivity extends Activity {
         intent.setClass(this, MyOrderActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.abc_fade_in,
-                R.anim.abc_fade_out);
+                R.anim.abc_fade_out	);
+
     }
+    public void click_to_showme(View v) {
+        Intent intent = new Intent();
+        intent.setClass(this, showmeActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.abc_fade_in,
+                R.anim.abc_fade_out	);
+
+    }
+
 
     public void click_to_imagine1(View v) {
         Intent intent = new Intent();

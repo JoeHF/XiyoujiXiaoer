@@ -22,12 +22,12 @@ import java.io.FileNotFoundException;
 public class Image5Activity extends Activity {
     private Myapp myapp;
     private View etName;
-
+     ImageView image1;
     private  String src=null;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upimagine5);
-        ImageView image1 = (ImageView) findViewById(R.id.picturesrc);
+         image1 = (ImageView) findViewById(R.id.picturesrc);
 
        Bundle b=getIntent().getExtras();
         String info=b.getString("picturesrc");
@@ -41,7 +41,7 @@ public class Image5Activity extends Activity {
 
     public void click_to_image6(View v)
     {
-
+        image1.setImageBitmap(null);
         String a=myapp.getLabel();
 
         Intent intent = new Intent();
@@ -84,6 +84,7 @@ public class Image5Activity extends Activity {
     }
     public void  onDestroy()
     {
+
         super.onDestroy();
 
 

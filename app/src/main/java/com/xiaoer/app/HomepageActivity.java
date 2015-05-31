@@ -3,7 +3,9 @@ package com.xiaoer.app;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
@@ -39,7 +41,8 @@ public class HomepageActivity extends Activity {
 
     MapView mMapView;
     BaiduMap mBaiduMap;
-
+    LinearLayout  lay1;
+    LinearLayout  lay2;
     boolean isFirstLoc = true;// 是否首次定位
 
     @Override
@@ -118,7 +121,25 @@ public class HomepageActivity extends Activity {
         public void onReceivePoi(BDLocation poiLocation) {
         }
     }
+    public void click_to_contract(View v)
+    {
+        Log.i("click", "i");
+        lay2=(LinearLayout)  findViewById(R.id.goout);
+        lay2.setVisibility(View.VISIBLE);
+    lay1=(LinearLayout) findViewById(R.id.show);
+    lay1.setVisibility(View.INVISIBLE);
 
+
+     }
+    public void click_to_showorder(View v)
+    {
+        lay1=(LinearLayout)  findViewById(R.id.show);
+        lay1.setVisibility(View.VISIBLE);
+        lay2=(LinearLayout) findViewById(R.id.goout);
+        lay2.setVisibility(View.INVISIBLE);
+
+
+    }
     @Override
     protected void onPause() {
         mMapView.onPause();

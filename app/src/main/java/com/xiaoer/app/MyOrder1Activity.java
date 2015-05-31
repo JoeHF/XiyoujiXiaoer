@@ -12,7 +12,7 @@ public class  MyOrder1Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.myorder);
+        setContentView(R.layout.myorder1);
     }
     public void click_to_myorder(View v)
     {

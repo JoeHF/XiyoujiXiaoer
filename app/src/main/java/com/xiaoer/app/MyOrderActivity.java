@@ -14,7 +14,7 @@ public class  MyOrderActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myorder);
     }
-    public void click_to_myorder1(View v)
+    public void click_to_order1(View v)
     {
         Intent intent = new Intent();
         intent.setClass(this, MyOrder1Activity.class);

@@ -35,7 +35,7 @@
 
         <TextView
             android:clickable="true"
-            android:onClick="click_to_myorder1"
+            android:onClick="click_to_order1"
             android:id="@+id/text2"
             android:layout_width="80dp"
             android:layout_height="wrap_content"

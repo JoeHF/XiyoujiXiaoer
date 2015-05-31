@@ -19,7 +19,8 @@ public class ImageGalleryDemoActivity extends Activity {
    private Myapp myapp;
     private static int RESULT_LOAD_IMAGE = 1;
    private String src=null;
-    @Override
+   ImageView imageView;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upimagine4);
@@ -35,7 +36,7 @@ public void click_to_picture(View v)
 
     startActivityForResult(i, RESULT_LOAD_IMAGE);
     TextView text=(TextView)  findViewById(R.id.finish);
-    text.setBackgroundColor(0x49b01d);
+    text.setBackgroundColor(R.color.main_theme_tab_color);
     text.setClickable(true);
 }
     @Override
@@ -54,7 +55,7 @@ public void click_to_picture(View v)
             String picturePath = cursor.getString(columnIndex);
             cursor.close();
             src=picturePath;
-            ImageView imageView = (ImageView) findViewById(R.id.imgView);
+             imageView = (ImageView) findViewById(R.id.imgView);
             imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
 
         }
@@ -63,6 +64,7 @@ public void click_to_picture(View v)
     public void click_to_image6(View v)
     {
 
+        imageView.setImageBitmap(null);
         String a=myapp.getLabel();
 
         Intent intent = new Intent();

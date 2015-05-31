@@ -38,9 +38,10 @@
         <ImageView
             style="@style/CommonBar_LeftImg_Style"
             android:src="@drawable/phone"/>
-        <TextView
+        <EditText
+            android:id="@+id/username"
             style="@style/CommonBar_CenterText_Style"
-            android:text="输入您的编号"
+            android:hint="输入您的编号"
             />
     </LinearLayout>
     <View
@@ -53,9 +54,10 @@
         <ImageView
             style="@style/CommonBar_LeftImg_Style"
             android:src="@drawable/mark"/>
-        <TextView
+        <EditText
+            android:id="@+id/password"
             style="@style/CommonBar_CenterText_Style"
-            android:text="请输入密码"
+            android:hint="请输入密码"
             />
     </LinearLayout>
     <View

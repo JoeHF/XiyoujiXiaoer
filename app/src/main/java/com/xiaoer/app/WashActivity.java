@@ -14,5 +14,13 @@ public class  WashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.washing);
     }
+    public void click_to_photoFinish(View v) {
+        Intent intent = new Intent();
+        intent.setClass(this, photoFinishActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.abc_fade_in,
+                R.anim.abc_fade_out);
+
+    }
 
 }

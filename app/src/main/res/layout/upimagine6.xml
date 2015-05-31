@@ -37,33 +37,33 @@
                         android:layout_height="fill_parent">
                         <ImageView
                             android:id="@+id/picture1"
-                            android:layout_width="10dp"
+                            android:layout_width="75dp"
                             android:layout_height="fill_parent"
-                            android:visibility="invisible"
+                            android:visibility="gone"
                             android:src="@drawable/mycar"/>
                         <ImageView
                             android:id="@+id/picture2"
-                            android:layout_width="0dp"
+                            android:layout_width="75dp"
                             android:layout_height="fill_parent"
-                            android:visibility="invisible"
+                            android:visibility="gone"
                             android:src="@drawable/mycar"/>
                         <ImageView
                             android:id="@+id/picture3"
-                            android:layout_width="0dp"
+                            android:layout_width="75dp"
                             android:layout_height="fill_parent"
-                            android:visibility="invisible"
+                            android:visibility="gone"
                             android:src="@drawable/mycar"/>
                         <ImageView
                             android:id="@+id/picture4"
-                            android:layout_width="0dp"
+                            android:layout_width="75dp"
                             android:layout_height="fill_parent"
-                            android:visibility="invisible"
+                            android:visibility="gone"
                             android:src="@drawable/mycar"/>
                         <ImageView
                             android:id="@+id/picture5"
-                            android:layout_width="80dp"
+                            android:layout_width="75dp"
                             android:layout_height="fill_parent"
-                            android:visibility="invisible"
+                            android:visibility="gone"
                             android:clickable="true"
                             android:onClick="click_to_upimage2"
                             android:src="@drawable/font"/>
