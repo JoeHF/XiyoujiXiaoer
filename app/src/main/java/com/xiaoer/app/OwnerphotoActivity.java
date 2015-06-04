@@ -56,8 +56,9 @@ public class  OwnerphotoActivity extends Activity implements android.view.Gestur
 
     boolean isFirstLoc = true;
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-     //   SDKInitializer.initialize(getApplicationContext());
+     ///  SDKInitializer.initialize(getApplicationContext());
         Log.i("click","a" );
         setContentView(R.layout.photo_success);
         mActivity = this;
@@ -98,8 +99,17 @@ public class  OwnerphotoActivity extends Activity implements android.view.Gestur
       //  mCurrentMode = LocationMode.NORMAL;
 
         // 地图初始化
-     /*   mMapView = (MapView) findViewById(R.id.bmapView);
-        mBaiduMap = mMapView.getMap();
+     mMapView = (MapView) findViewById(R.id.bmapView);
+        mMapView.setEnabled(false);
+          mMapView.setFocusable(false);
+        mMapView.onWindowFocusChanged(true);
+
+        mMapView.setFocusableInTouchMode(false);
+
+      mMapView.setOnTouchListener(new View.OnTouchListener(){public boolean onTouch(View v, MotionEvent event){if(event.getPointerCount() > 1) { return true; } return false;} });
+      mBaiduMap=mMapView.getMap();
+
+      /*  mBaiduMap = mMapView.getMap();
         // 开启定位图层
         mBaiduMap.setMyLocationEnabled(true);
         // 定位初始化

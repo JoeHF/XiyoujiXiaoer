@@ -38,7 +38,7 @@ public class Image6Activity extends Activity {
             image1.setImageBitmap(BitmapFactory.decodeFile(list.get(0).toString()));
 
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(300, 200));
+
 
         }
         if (number>=2)
@@ -51,7 +51,7 @@ public class Image6Activity extends Activity {
             image1.setImageBitmap(BitmapFactory.decodeFile(list.get(1).toString()));
 
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(300, 200));
+
         }
         if (number>=3)
         {
@@ -60,7 +60,7 @@ public class Image6Activity extends Activity {
             image1.setImageBitmap(BitmapFactory.decodeFile(list.get(2).toString()));
 
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(300, 200));
+
         }
         if (number>=4)
         {
@@ -69,14 +69,14 @@ public class Image6Activity extends Activity {
 
 
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(300,200));
+
         }
         if (number<4)
         {
             image1=(ImageView)  findViewById(R.id.picture5);
 
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(300, 200));
+
         }
     }
     public void click_to_upimage2(View v)
@@ -96,6 +96,7 @@ public class Image6Activity extends Activity {
         startActivity(intent);
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out	);
+
     }
 
 }

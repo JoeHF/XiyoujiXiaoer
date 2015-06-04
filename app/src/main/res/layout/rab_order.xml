@@ -80,9 +80,11 @@
                     />
                  </LinearLayout>
                 <ImageView
+
                     android:layout_width="5dp"
                     android:layout_height="fill_parent" />
                 <TextView
+                    android:id="@+id/siteid"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:textSize="20dp"
@@ -121,6 +123,7 @@
                             android:layout_width="5dp"
                             android:layout_height="fill_parent" />
                         <TextView
+                            android:id="@+id/time"
                             android:layout_width="160dp"
                             android:layout_height="fill_parent"
 
@@ -145,6 +148,7 @@
                             android:layout_width="5dp"
                             android:layout_height="fill_parent" />
                         <TextView
+                            android:id="@+id/type"
                             android:layout_width="160dp"
                             android:layout_height="fill_parent"
 
@@ -169,9 +173,10 @@
                             android:layout_width="5dp"
                             android:layout_height="fill_parent" />
                         <TextView
+
                             android:layout_width="160dp"
                             android:layout_height="fill_parent"
-
+                            android:id="@+id/price"
                             android:gravity="center_vertical|left"
                             android:text="99元"
                             />

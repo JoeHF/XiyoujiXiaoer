@@ -29,7 +29,7 @@ public class  photoFinish1Activity extends Activity {
             Bitmap bitmap=Tool.getLoacalBitmap(list.get(0).toString());
             image1.setImageBitmap(bitmap);
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(100, 60));
+
 
         }
         if (number>=2)
@@ -38,7 +38,7 @@ public class  photoFinish1Activity extends Activity {
             Bitmap bitmap=Tool.getLoacalBitmap(list.get(1).toString());
             image1.setImageBitmap(bitmap);
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(100, 60));
+
         }
         if (number>=3)
         {
@@ -46,7 +46,7 @@ public class  photoFinish1Activity extends Activity {
             Bitmap bitmap=Tool.getLoacalBitmap(list.get(2).toString());
             image1.setImageBitmap(bitmap);
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(100, 60));
+
         }
         if (number>=4)
         {
@@ -61,7 +61,7 @@ public class  photoFinish1Activity extends Activity {
             ImageView image1=(ImageView)  findViewById(R.id.picture5);
 
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(100, 60));
+
         }
 
     }

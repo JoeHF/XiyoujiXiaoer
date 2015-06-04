@@ -16,5 +16,13 @@ public class Constant {
     //rest http request
     public static final String GET_WEATHER_BY_CITY = "my/getWeatherByCity";
     public static final String REGISTER = "my/addUserByAccount";
-    public static final String LOGIN = "my/waiterLoginByAccount";
+    public static final String LOGIN = "waiter/waiterLoginByAccount";
+    public static final String UpdateLocation="waiter/updateLocationById";
+    public static final String getOrder="waiter/getOrderByWaiterid";
+    public static final String getOrderDetail="order/getOrderDetail";
+    public static  final String getOrderListByWaiterid="waiter/getOrderListByWaiterid";
+    public static final String getCarDetailByid="my/getCarDetailByid";
+    public static final  String  getVersionDetailByid="my/getVersionDetailByid";
+    public static final  String  getSiteDetailByid="my/getSiteDetailByid";
+    public static final  String  uploadpic="image/uploadpic";
 }

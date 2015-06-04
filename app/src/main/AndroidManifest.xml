@@ -70,21 +70,21 @@
         </activity>
         <activity
 
-            android:name=".Image1Activity"
+            android:name="com.xiaoer.app.Image1Activity"
             android:windowSoftInputMode="stateHidden"
             android:label="Xiyouji"
             android:screenOrientation="portrait">
         </activity>
         <activity
 
-            android:name=".Image2Activity"
+            android:name="com.xiaoer.app.Image2Activity"
             android:windowSoftInputMode="stateHidden"
             android:label="Xiyouji"
             android:screenOrientation="portrait">
         </activity>
         <activity
 
-            android:name=".Image3Activity"
+            android:name="com.xiaoer.app.Image3Activity"
             android:windowSoftInputMode="stateHidden"
             android:label="Xiyouji"
             android:screenOrientation="portrait">

@@ -11,6 +11,16 @@ import android.graphics.drawable.Drawable;
 import android.util.Base64;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+import com.xiaoer.app.Constant.Constant;
+import com.xiaoer.app.Util.RestClient;
+
+import org.apache.http.Header;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.io.FileInputStream;
@@ -24,6 +34,7 @@ public class Image5Activity extends Activity {
     private View etName;
      ImageView image1;
     private  String src=null;
+    Bitmap bitmap;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upimagine5);
@@ -33,15 +44,37 @@ public class Image5Activity extends Activity {
         String info=b.getString("picturesrc");
         src=info;
         Log.i("click", " photo sure1");
-
-        image1.setImageBitmap(BitmapFactory.decodeFile(info));
+        bitmap=BitmapFactory.decodeFile(info);
+        image1.setImageBitmap(bitmap);
         myapp = (Myapp) getApplication();
 
     }
 
     public void click_to_image6(View v)
     {
-        image1.setImageBitmap(null);
+       String imagename=Tool.bitmaptoString(bitmap);
+        RequestParams requestParams = new RequestParams();
+        requestParams.put("icon", imagename);
+        RestClient.post(Constant.uploadpic, requestParams, new JsonHttpResponseHandler()
+        {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response)
+            {
+                try {
+                    String iamgeid = response.getString("imageid");
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+                });
+         image1.setImageBitmap(null);
+        if(!bitmap.isRecycled())
+        {
+            bitmap.recycle();
+
+        }
+        bitmap=null;
         String a=myapp.getLabel();
 
         Intent intent = new Intent();
