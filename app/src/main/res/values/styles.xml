@@ -137,7 +137,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:gravity">center_vertical|center_horizontal</item>
-        <item name="android:layout_weight">12.0</item>
+        <item name="android:layout_weight">12</item>
     </style>
     <style name="TwoText_Right">
         <item name="android:layout_width">0dp</item>

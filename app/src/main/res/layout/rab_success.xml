@@ -72,6 +72,7 @@
                 android:layout_width="30dp"
                 android:layout_height="fill_parent" />
             <TextView
+                android:id="@+id/sitename"
                 android:layout_width="200dp"
                 android:layout_height="fill_parent"
                 android:gravity="center_vertical|left"
@@ -97,6 +98,7 @@
                 android:layout_width="30dp"
                 android:layout_height="fill_parent" />
             <TextView
+               android:id="@+id/inf"
                 android:layout_width="200dp"
                 android:layout_height="fill_parent"
                 android:gravity="center_vertical|left"
@@ -124,6 +126,7 @@
             >
 
             <TextView
+                android:id="@+id/next"
                 android:layout_width="220dp"
                 android:layout_height="40dp"
                 android:background="@drawable/textview_round_style"

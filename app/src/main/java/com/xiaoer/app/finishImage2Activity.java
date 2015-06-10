@@ -34,10 +34,14 @@ public class finishImage2Activity extends Activity {
     public void click_to_search(View v)
     {
         Intent intent = new Intent();
-        intent.setClass(this, Image4Activity.class);
+        intent.setClass(this, ImageGalleryDemoActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out	);
     }
-
+    public void click_to_back(View v) {
+        finish();
+        overridePendingTransition(R.anim.push_right_in,
+                R.anim.push_right_out);
+    }
 }

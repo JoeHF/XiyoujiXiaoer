@@ -24,6 +24,8 @@
         android:background="@color/lightgray"
         >
         <TextView
+            android:clickable="true"
+            android:onClick="click_to_back"
             style="@style/TwoText_Left"
             android:text="重拍"
             />

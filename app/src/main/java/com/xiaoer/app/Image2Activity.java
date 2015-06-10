@@ -42,5 +42,9 @@ public class Image2Activity extends Activity {
                 R.anim.abc_fade_out	);
 
     }
-
+    public void click_to_back(View v) {
+        finish();
+        overridePendingTransition(R.anim.push_right_in,
+                R.anim.push_right_out);
+    }
 }

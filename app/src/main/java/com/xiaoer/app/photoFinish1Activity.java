@@ -17,6 +17,7 @@ public class  photoFinish1Activity extends Activity {
     private Myapp myapp1;
     private List list;
     private int number;
+    int pictureid[]={R.id.picture1,R.id.picture2,R.id.picture3,R.id.picture4};
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo_finish1);
@@ -54,13 +55,15 @@ public class  photoFinish1Activity extends Activity {
             Bitmap bitmap=Tool.getLoacalBitmap(list.get(3).toString());
             image1.setImageBitmap(bitmap);
             image1.setVisibility(View.VISIBLE);
-            image1.setLayoutParams(new LinearLayout.LayoutParams(100, 60));
+
         }
         if (number<4)
         {
-            ImageView image1=(ImageView)  findViewById(R.id.picture5);
-
+            ImageView image1;
+            image1=(ImageView)  findViewById(pictureid[number]);
+            image1.setClickable(true);
             image1.setVisibility(View.VISIBLE);
+
 
         }
 
@@ -81,6 +84,11 @@ public class  photoFinish1Activity extends Activity {
         startActivity(intent);
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out	);
+    }
+    public void click_to_back(View v) {
+        finish();
+        overridePendingTransition(R.anim.push_right_in,
+                R.anim.push_right_out);
     }
 }
 

@@ -116,7 +116,7 @@
 
         <TextView
             android:clickable="true"
-            android:onClick="click_to_delete"
+            android:onClick="click_to_back"
             style="@style/Single_CenterText_Style"
             android:text="取消"
 

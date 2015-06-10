@@ -2,6 +2,9 @@ package com.xiaoer.app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -36,11 +39,15 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
+
+import java.io.IOException;
+import java.net.URL;
+
 public class  OwnerphotoActivity extends Activity implements android.view.GestureDetector.OnGestureListener {
-    private int[] imgs = { R.drawable.car, R.drawable.mycar, R.drawable.car,
+    private int[] imgs = { R.drawable.mycar, R.drawable.messi, R.drawable.mycar,
 
             R.drawable.messi };
-
+    ImageView image1;
     private GestureDetector gestureDetector;
 
     private ViewFlipper viewFlipper;
@@ -61,6 +68,11 @@ public class  OwnerphotoActivity extends Activity implements android.view.Gestur
      ///  SDKInitializer.initialize(getApplicationContext());
         Log.i("click","a" );
         setContentView(R.layout.photo_success);
+     /*   String src="http://developer.baidu.com/map/static-1.htm";
+      image1=(ImageView) findViewById(R.id.image);
+       Bitmap bitmap=Tool.getNetBitmap(src);
+          image1.setImageBitmap(bitmap) ;
+          */
         mActivity = this;
 
         viewFlipper = (ViewFlipper) findViewById(R.id.flipper);
@@ -99,7 +111,7 @@ public class  OwnerphotoActivity extends Activity implements android.view.Gestur
       //  mCurrentMode = LocationMode.NORMAL;
 
         // 地图初始化
-     mMapView = (MapView) findViewById(R.id.bmapView);
+    /* mMapView = (MapView) findViewById(R.id.bmapView);
         mMapView.setEnabled(false);
           mMapView.setFocusable(false);
         mMapView.onWindowFocusChanged(true);
@@ -108,7 +120,7 @@ public class  OwnerphotoActivity extends Activity implements android.view.Gestur
 
       mMapView.setOnTouchListener(new View.OnTouchListener(){public boolean onTouch(View v, MotionEvent event){if(event.getPointerCount() > 1) { return true; } return false;} });
       mBaiduMap=mMapView.getMap();
-
+     */
       /*  mBaiduMap = mMapView.getMap();
         // 开启定位图层
         mBaiduMap.setMyLocationEnabled(true);
@@ -311,5 +323,22 @@ public class  OwnerphotoActivity extends Activity implements android.view.Gestur
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out	);
     }
+    private Drawable loadImageFromNetwork(String imageUrl)
+    {
+        Drawable drawable = null;
+        try {
+            // 可以在这里通过文件名来判断，是否本地有此图片
+            drawable = Drawable.createFromStream(
+                    new URL(imageUrl).openStream(), "image.jpg");
+        } catch (IOException e) {
+            Log.d("test", e.getMessage());
+        }
+        if (drawable == null) {
+            Log.d("test", "null drawable");
+        } else {
+            Log.d("test", "not null drawable");
+        }
 
+        return drawable ;
+    }
 }

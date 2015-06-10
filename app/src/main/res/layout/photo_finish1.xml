@@ -9,7 +9,7 @@
         android:layout_height="400dp">
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="100dp">
+            android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="20dp"
                 android:layout_height="fill_parent"></LinearLayout>
@@ -26,53 +26,66 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical|center"
-                        android:text="给车主洗澡的爱车拍个照吧"
+                        android:text="给车主洗完澡的爱车拍个照吧"
                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/picture1"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:clickable="false"
+                        android:onClick="click_to_upimage2"
+                        android:visibility="gone"
+                        android:src="@drawable/font"/>
+                    <ImageView
+                        android:id="@+id/picture2"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:clickable="false"
+                        android:onClick="click_to_upimage2"
+                        android:visibility="gone"
+                        android:src="@drawable/font"/>
+
+
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent">
-                        <ImageView
-                            android:id="@+id/picture1"
-                            android:layout_width="75dp"
-                            android:layout_height="fill_parent"
-                            android:visibility="gone"
-                            android:src="@drawable/mycar"/>
-                        <ImageView
-                            android:id="@+id/picture2"
-                            android:layout_width="75dp"
-                            android:layout_height="fill_parent"
-                            android:visibility="gone"
-                            android:src="@drawable/mycar"/>
-                        <ImageView
-                            android:id="@+id/picture3"
-                            android:layout_width="75dp"
-                            android:layout_height="fill_parent"
-                            android:visibility="gone"
-                            android:src="@drawable/mycar"/>
-                        <ImageView
-                            android:id="@+id/picture4"
-                            android:layout_width="75dp"
-                            android:layout_height="fill_parent"
-                            android:visibility="gone"
-                            android:src="@drawable/mycar"/>
-                        <ImageView
-                            android:id="@+id/picture5"
-                            android:layout_width="75dp"
-                            android:layout_height="fill_parent"
-                            android:visibility="gone"
-                            android:clickable="true"
-                            android:onClick="click_to_upimage2"
-                            android:src="@drawable/font"/>
+                    android:layout_height="10dp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
 
-                    </LinearLayout>
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/picture3"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:visibility="gone"
+                        android:clickable="false"
+                        android:onClick="click_to_upimage2"
+                        android:src="@drawable/font"/>
+                    <ImageView
+                        android:id="@+id/picture4"
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:visibility="gone"
+                        android:clickable="false"
+                        android:onClick="click_to_upimage2"
+                        android:src="@drawable/font"/>
+
                 </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -54,7 +54,7 @@
         <LinearLayout
             android:id="@+id/show"
             android:visibility="visible"
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="160dp"
             android:orientation="vertical"
              android:layout_centerVertical="true"

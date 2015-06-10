@@ -2,8 +2,11 @@ package com.xiaoer.app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
@@ -33,10 +36,10 @@ public class  SuccessActivity extends Activity {
     public MyLocationListenner myListener = new MyLocationListenner();
     private LocationMode mCurrentMode;
     BitmapDescriptor mCurrentMarker;
-
+    boolean firstTouch=true;
     MapView mMapView;
     BaiduMap mBaiduMap;
-
+   TextView textview;
     boolean isFirstLoc = true;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +61,14 @@ public class  SuccessActivity extends Activity {
         option.setScanSpan(1000);
         mLocClient.setLocOption(option);
         mLocClient.start();
+        SharedPreferences mySharedPreferences = getSharedPreferences("user",
+                Activity.MODE_PRIVATE);
+        String sitename=mySharedPreferences.getString("sitename","0");
+        String inf=mySharedPreferences.getString("inf","0");
+       textview=(TextView) findViewById(R.id.sitename);
+        textview.setText(sitename);
+        textview=(TextView) findViewById(R.id.inf);
+        textview.setText(inf);
     }
 
     public void click_to_photo(View v) {
@@ -96,11 +107,18 @@ public class  SuccessActivity extends Activity {
 
 
     public void click_to_arrive(View v) {
-        Intent intent = new Intent();
-        intent.setClass(this, ArriveActivity.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.abc_fade_in,
-                R.anim.abc_fade_out);
+        if(firstTouch==true) {
+            textview = (TextView) findViewById(R.id.next);
+            textview.setText("已到达");
+            firstTouch=false;
+        }
+        else {
+            Intent intent = new Intent();
+            intent.setClass(this,  Image1Activity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.abc_fade_in,
+                    R.anim.abc_fade_out);
+        }
 
     }
     public void click_to_showme(View v) {

@@ -25,4 +25,11 @@ public class Constant {
     public static final  String  getVersionDetailByid="my/getVersionDetailByid";
     public static final  String  getSiteDetailByid="my/getSiteDetailByid";
     public static final  String  uploadpic="image/uploadpic";
+  public static final String   waiterUploadImageBeforeWash="image/waiterUploadImageBeforeWash";
+    public static final String acceptOrderByWaiterid="waiter/acceptOrderByWaiterid";
+    public static final String startCleanCarByAccount="waiter/startCleanCarByAccount";
+    public static final String endCleanCarByAccount="waiter/endCleanCarByAccount";
+    public static final String waiterUploadImageAfterWash="image/waiterUploadImageAfterWash";
+    public static  final String getUserIcon="image/getWaiterIcon";
+    public static final String userUploadIcon="image/waiterUploadIcon";
 }

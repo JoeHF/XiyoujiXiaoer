@@ -50,7 +50,20 @@ import android.widget.FrameLayout;
 
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.app.Activity;
+import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
 
         public class Image3Activity extends Activity {
@@ -108,7 +121,7 @@ public void onClick(View v) {
 
 
 
-     text.setBackgroundColor(R.color.main_theme_tab_color);
+    text.setBackgroundColor(getResources().getColor(R.color.main_theme_tab_color));
      text.setClickable(true);
 
 
@@ -452,5 +465,20 @@ public void onPause() {
                 startActivity(intent);
                 overridePendingTransition(R.anim.abc_fade_in,
                         R.anim.abc_fade_out	);
+                this.finish();
+            }
+            public void click_to_back(View v) {
+                finish();
+                overridePendingTransition(R.anim.push_right_in,
+                        R.anim.push_right_out);
+            }
+            public void click_to_delete(View v)
+            {
+                TextView text=(TextView)  findViewById(R.id.finish);
+
+
+
+                text.setBackgroundColor(getResources().getColor(R.color.white));
+                text.setClickable(false);
             }
         }

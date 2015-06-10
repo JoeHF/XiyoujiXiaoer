@@ -22,4 +22,9 @@ public class  photoFinishActivity extends Activity {
         overridePendingTransition(R.anim.abc_fade_in,
                 R.anim.abc_fade_out	);
     }
+    public void click_to_back(View v) {
+        finish();
+        overridePendingTransition(R.anim.push_right_in,
+                R.anim.push_right_out);
+    }
 }

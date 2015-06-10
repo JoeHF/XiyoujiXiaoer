@@ -30,10 +30,9 @@ public class MainActivity extends Activity {
     }
 
     public void click_to_homepage(View v) {
-       String username_value = username.getText().toString();
-        String password_value = password.getText().toString();
-       username_value="100000";
-        password_value="123456";
+        final String username_value = username.getText().toString();
+        final String password_value = password.getText().toString();
+
         RequestParams requestParams = new RequestParams();
         requestParams.put("code", username_value);
         requestParams.put("password", password_value);
@@ -65,15 +64,16 @@ public class MainActivity extends Activity {
                     editor.putString("longitude", longitude);
                     editor.putString("latitude", latitude);
                     editor.putString("income", income);
+                    editor.putString("password",password_value);
                     //提交当前数据
                     editor.commit();
-
+                    Log.i("a","a");
                     Intent intent1 = new Intent();
                     intent1.setClass(MainActivity.this, HomepageActivity.class);
                     startActivity(intent1);
                     overridePendingTransition(R.anim.push_left_in,
                             R.anim.push_left_out);
-                    finish();
+
 
                 } catch (JSONException e) {
                     e.printStackTrace();

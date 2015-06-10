@@ -3,6 +3,8 @@
     style="@style/ActionBar_Style">
 
     <ImageView
+        android:clickable="true"
+        android:onClick="click_to_back"
         style="@style/ActionBar_LeftImg_Style"
         android:src="@drawable/back"/>
     <TextView

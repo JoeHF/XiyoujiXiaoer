@@ -8,6 +8,8 @@ android:background="@color/lightgray">
     style="@style/ActionBar_Style">
 
     <ImageView
+        android:clickable="true"
+        android:onClick="click_to_back"
         style="@style/ActionBar_LeftImg_Style"
         android:src="@drawable/back"/>
     <TextView
@@ -59,6 +61,7 @@ android:background="@color/lightgray">
                 android:layout_width="30dp"
                 android:layout_height="fill_parent" />
             <TextView
+                android:id="@+id/type"
                 android:layout_width="160dp"
                 android:layout_height="fill_parent"
 
@@ -86,6 +89,7 @@ android:background="@color/lightgray">
                 android:layout_width="30dp"
                 android:layout_height="fill_parent" />
             <TextView
+                android:id="@+id/sitename"
                 android:layout_width="160dp"
                 android:layout_height="fill_parent"
                 android:gravity="center_vertical|left"
@@ -113,6 +117,7 @@ android:background="@color/lightgray">
                 android:layout_width="30dp"
                 android:layout_height="fill_parent" />
             <TextView
+                android:id="@+id/inf"
                 android:layout_width="160dp"
                 android:layout_height="fill_parent"
                 android:gravity="center_vertical|left"
@@ -132,6 +137,7 @@ android:background="@color/lightgray">
             >
 
             <TextView
+                android:id="@+id/price"
                 android:layout_width="200dp"
                 android:layout_height="fill_parent"
                 android:gravity="center_vertical|left"

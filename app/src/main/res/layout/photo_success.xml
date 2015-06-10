@@ -8,11 +8,11 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
-        <com.baidu.mapapi.map.MapView
-            android:id="@+id/bmapView"
+        <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:clickable="true" />
+            android:id="@+id/image"
+           />
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="40dp"
