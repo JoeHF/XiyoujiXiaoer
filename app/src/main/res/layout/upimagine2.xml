@@ -5,18 +5,16 @@
     android:background="@color/lightgray">
     <include layout="@layout/upimaginehead"/>
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="300dp">
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="100dp">
+
+
             <LinearLayout
-                android:layout_width="20dp"
-                android:layout_height="fill_parent"></LinearLayout>
-            <LinearLayout
+                android:layout_gravity="center"
                 android:orientation="vertical"
                 android:layout_width="300dp"
-                android:layout_height="fill_parent"
+                android:layout_height="100dp"
                 android:background="@color/white"
                 >
                 <LinearLayout
@@ -32,6 +30,9 @@
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent">
+                    <ImageView android:layout_height="fill_parent"
+                        android:layout_width="20dp"
+                        />
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="fill_parent"
@@ -42,10 +43,21 @@
                         android:gravity="center_vertical|left"
                         android:text="上传照片"
                         />
-                </LinearLayout>
+
+
             </LinearLayout>
+
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+
+
+            ></LinearLayout>
         </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -53,30 +65,17 @@
         />
     <LinearLayout
         style="@style/CommonBar_InLinearLayout_Style">
-      <ImageView
-          android:layout_width="80dp"
-          android:layout_height="fill_parent" />
-        <TextView
-            android:textColor="@color/black"
-          android:layout_height="fill_parent"
-           android:layout_width="90dp"
-             android:text="你还可以上传"
-            android:gravity="center|left"
-            />
+
         <TextView
             android:id="@+id/number"
-            android:layout_width="20dp"
-            android:layout_height="fill_parent"
             android:textColor="@color/black"
-            android:gravity="center|left"
+          android:layout_height="fill_parent"
+           android:layout_width="fill_parent"
+             android:text="你还可以上传4张照片哦"
+            android:gravity="center|center_horizontal"
             />
-        <TextView
-            android:textColor="@color/black"
-            android:layout_height="fill_parent"
-            android:layout_width="90dp"
-            android:text="张照片"
-            android:gravity="center|left"
-            />
+
+
     </LinearLayout>
     <View
         android:layout_width="match_parent"

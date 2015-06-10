@@ -12,6 +12,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import android.util.Base64;
+import android.util.Log;
+
 /**
  * Created by Administrator on 2015/5/24.
  */
@@ -55,32 +57,41 @@ public class Tool {
     }
 public static Bitmap   getNetBitmap(String url)
 {
-    BitmapFactory.Options opt = new BitmapFactory.Options();
+   BitmapFactory.Options opt = new BitmapFactory.Options();
     opt.inJustDecodeBounds = true;
+
+    Bitmap bitmap=null;
     HttpURLConnection conn = null;
     try {
+        Log.i("1", "1");
         conn = (HttpURLConnection) new URL(url).openConnection();
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-    try {
-        conn.connect();
+
+        conn.setConnectTimeout(5 * 1000);
+        conn.setDoInput(true);
+        Log.i("1", "1");
+      conn.connect();
     } catch (IOException e) {
         e.printStackTrace();
     }
     try {
 
 
-        InputStream input = conn.getInputStream();
-        Bitmap bm = BitmapFactory.decodeStream(input,null,opt);
+
+
+        InputStream is= conn.getInputStream();
+        Log.i("1", "1");
+        Bitmap bit=BitmapFactory.decodeStream(is,null,opt);
+        Log.i("1", "1");
         opt.inSampleSize =10;
+
         opt.inJustDecodeBounds = false;
-      return BitmapFactory.decodeStream(input,null,opt);
-
-
+        bitmap =BitmapFactory.decodeStream(is,null,opt);
+        Log.i("1", "1");
+        is.close();
     } catch (IOException e) {
         e.printStackTrace();
     }
-    return null;
+
+    return bitmap;
 }
 }

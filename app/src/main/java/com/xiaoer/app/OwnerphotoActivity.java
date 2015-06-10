@@ -3,6 +3,7 @@ package com.xiaoer.app;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -29,6 +30,9 @@ import com.baidu.mapapi.search.geocode.GeoCoder;
 import com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeOption;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -42,7 +46,14 @@ import android.widget.ViewFlipper;
 
 import java.io.IOException;
 import java.net.URL;
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+import com.xiaoer.app.Constant.Constant;
+import com.xiaoer.app.Util.RestClient;
 
+import org.apache.http.Header;
+import org.json.JSONException;
+import org.json.JSONObject;
 public class  OwnerphotoActivity extends Activity implements android.view.GestureDetector.OnGestureListener {
     private int[] imgs = { R.drawable.mycar, R.drawable.messi, R.drawable.mycar,
 
@@ -68,11 +79,34 @@ public class  OwnerphotoActivity extends Activity implements android.view.Gestur
      ///  SDKInitializer.initialize(getApplicationContext());
         Log.i("click","a" );
         setContentView(R.layout.photo_success);
-     /*   String src="http://developer.baidu.com/map/static-1.htm";
+      String src="http://api.map.baidu.com/staticimage?width=400&height=400&zoom=10";
       image1=(ImageView) findViewById(R.id.image);
-       Bitmap bitmap=Tool.getNetBitmap(src);
-          image1.setImageBitmap(bitmap) ;
-          */
+        AsyncHttpClient client = new AsyncHttpClient();
+        client.get(src,new  AsyncHttpResponseHandler()
+        {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                if (statusCode == 200) {
+                    //创建工厂对象
+                    BitmapFactory bitmapFactory = new BitmapFactory();
+                    //工厂对象的decodeByteArray把字节转换成Bitmap对象
+                    Bitmap bitmap = bitmapFactory.decodeByteArray(responseBody, 0, responseBody.length);
+                    //设置图片
+                   image1.setImageBitmap(bitmap);
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers,
+                                  byte[] responseBody, Throwable error) {
+                error.printStackTrace();
+            }
+        });
+       //Bitmap bitmap=Tool.getNetBitmap(src);
+      /*    image1.setImageBitmap(bitmap);
+   /*     Drawable drawable = loadImageFromNetwork(src);
+        image1.setImageDrawable(drawable) ;
+*/
         mActivity = this;
 
         viewFlipper = (ViewFlipper) findViewById(R.id.flipper);

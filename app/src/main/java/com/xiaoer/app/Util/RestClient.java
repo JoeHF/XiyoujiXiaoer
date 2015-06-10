@@ -2,6 +2,8 @@ package com.xiaoer.app.Util;
 
 
 
+ import android.graphics.Bitmap;
+
  import com.loopj.android.http.*;
 // Markdown supported   Edit in fullscreen
 
@@ -24,5 +26,6 @@ package com.xiaoer.app.Util;
     private static String getAbsoluteUrl(String relativeUrl) {
          return BASE_URL + relativeUrl;
    }
+
  }
 

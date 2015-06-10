@@ -106,7 +106,7 @@ public class  orderHistoryActivity extends Activity implements android.view.Gest
                         int i = 0;
                         String endtime = jsonObject.getString("endtime");
                         String stage = jsonObject.getString("stage");
-                        if (!endtime.equals("0") & !stage.equals("已关闭")) {
+                        if(stage.equals("已完成")) {
                             orderid[i] = jsonObject.getString("orderid");
 
                             Log.i("a", orderid[i]);
@@ -268,7 +268,7 @@ public class  orderHistoryActivity extends Activity implements android.view.Gest
                     int i = 0;
                     String endtime = jsonObject.getString("endtime");
                     String stage=jsonObject.getString("stage");
-                    if (!endtime.equals("0") & !stage.equals("已关闭") ) {
+                    if(stage.equals("已完成")) {
                         orderid[i] = jsonObject.getString("orderid");
 
                         Log.i("a", orderid[i]);
@@ -343,7 +343,7 @@ public class  orderHistoryActivity extends Activity implements android.view.Gest
                     int i = 0;
                     String endtime = jsonObject.getString("endtime");
                     String stage=jsonObject.getString("stage");
-                    if (!endtime.equals("0") && !stage.equals("已关闭")) {
+                    if(stage.equals("已完成")) {
                         orderid[i] = jsonObject.getString("orderid");
 
                         Log.i("a", orderid[i]);

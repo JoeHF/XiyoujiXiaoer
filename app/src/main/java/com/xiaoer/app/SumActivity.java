@@ -65,7 +65,7 @@ public class  SumActivity extends Activity {
                         Log.i("http login1 jsonobject", jsonObject.toString());
                         String endtime = jsonObject.getString("endtime");
                         String stage=jsonObject.getString("stage");
-                        if (!endtime.equals("0") && !stage.equals("已关闭")) {
+                        if (stage.equals("已完成")) {
                             objectnumber=objectnumber+1;
                             type = jsonObject.getString("type");
                             price = jsonObject.getString("price");

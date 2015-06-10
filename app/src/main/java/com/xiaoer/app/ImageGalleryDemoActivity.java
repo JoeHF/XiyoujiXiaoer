@@ -34,8 +34,11 @@ public class ImageGalleryDemoActivity extends Activity {
    ImageView imageView;
   Bitmap bitmap;
     Bitmap bitmap1;
-    String imageid;
 
+    String imageid;
+    String orderid;
+    int mark=-1;
+    String waiterid;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upimagine4);
@@ -46,11 +49,19 @@ public class ImageGalleryDemoActivity extends Activity {
     }
 public void click_to_picture(View v)
 {
-    Intent i = new Intent(
+  /*  Intent i = new Intent(
             Intent.ACTION_PICK,
             android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
     startActivityForResult(i, RESULT_LOAD_IMAGE);
+    */
+    SharedPreferences mySharedPreferences = getSharedPreferences("user",
+            Activity.MODE_PRIVATE);
+  src=mySharedPreferences.getString("src","0");
+    imageView = (ImageView) findViewById(R.id.imgView);
+    bitmap=Tool.getLoacalBitmap(src);
+    imageView.setImageBitmap(bitmap);
+    bitmap1=Tool.getLoacalBitmap1(src);
     TextView text=(TextView)  findViewById(R.id.finish);
     text.setBackgroundColor(this.getResources().getColor(R.color.main_theme_tab_color));
 
@@ -74,27 +85,92 @@ public void click_to_picture(View v)
             src=picturePath;
              imageView = (ImageView) findViewById(R.id.imgView);
             bitmap=Tool.getLoacalBitmap(src);
-            imageView.setImageBitmap(bitmap);
             bitmap1=Tool.getLoacalBitmap1(src);
+            imageView.setImageBitmap(bitmap);
+
         }
 
     }
     public void click_to_image6(View v)
     {
-        SharedPreferences mySharedPreferences = getSharedPreferences("user",
-                Activity.MODE_PRIVATE);
-        String orderid=mySharedPreferences.getString("orderid","0");
-        imageView.setImageBitmap(null);
-       String imagename=Tool.bitmaptoString(bitmap1);
+        String imagename=Tool.bitmaptoString(bitmap1);
         RequestParams requestParams = new RequestParams();
         requestParams.put("icon", imagename);
 
-        RestClient.post(Constant.uploadpic, requestParams, new JsonHttpResponseHandler() {
+
+       /*String imagename=Tool.bitmaptoString(bitmap);
+        RequestParams requestParams = new RequestParams();
+        requestParams.put("icon", imagename);
+        */
+        SharedPreferences mySharedPreferences = getSharedPreferences("user",
+                Activity.MODE_PRIVATE);
+        orderid=mySharedPreferences.getString("orderid","0");
+        waiterid=mySharedPreferences.getString("waiterid","0");
+        imageView.setImageBitmap(null);
+
+        Log.i("bitmap","a");
+        RestClient.get(Constant.uploadpic, requestParams, new JsonHttpResponseHandler()
+        {
             @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response)
+            {
                 try {
-                    imageid = response.getString("imageid");
-                    Log.i("imageid1",imageid);
+                    String imageid = response.getString("imageid");
+
+                    Log.i("imageid",imageid);
+                    String a=myapp.getLabel();
+
+                    RequestParams requestParams2 = new RequestParams();
+                    requestParams2.put("imageid", imageid);
+                    requestParams2.put("waiterid", waiterid);
+
+                    RestClient.post(Constant.userUploadIcon, requestParams2, new JsonHttpResponseHandler() {
+                        @Override
+                        public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+
+                            Log.i("http login jsonobjectme", response.toString());
+
+
+
+                        }
+                    });
+                    List list=new ArrayList();
+                    if(a.equals("0")) {
+                        RequestParams requestParams1 = new RequestParams();
+                        requestParams1.put("imageid", imageid);
+                        requestParams1.put("orderid", orderid);
+
+                        RestClient.post(Constant.waiterUploadImageBeforeWash, requestParams1, new JsonHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+
+                                Log.i("http login jsonobject", response.toString());
+                                mark=0;
+
+
+                            }
+                        });
+
+
+                    }
+                    if(a.equals("1")) {
+                        RequestParams requestParams1 = new RequestParams();
+                        requestParams1.put("orderid", orderid);
+                        requestParams1.put("imageid", imageid);
+                        RestClient.post(Constant.waiterUploadImageAfterWash, requestParams1, new JsonHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+
+                                Log.i("http login jsonobject", response.toString());
+
+                                mark=1;
+
+                            }
+                        });
+
+
+                    }
+
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -102,62 +178,43 @@ public void click_to_picture(View v)
             }
         });
 
-        Log.i("bitmap1","a");
+
         String a=myapp.getLabel();
-
-        Intent intent = new Intent();
-        List list=new ArrayList();
         if(a.equals("0")) {
-            RequestParams requestParams1 = new RequestParams();
-            requestParams1.put("orderid", orderid);
-            requestParams1.put("imageid", imageid);
-            RestClient.post(Constant.waiterUploadImageBeforeWash, requestParams1, new JsonHttpResponseHandler() {
-                @Override
-                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-
-                    Log.i("http login jsonobject", response.toString());
-
-
-
-                }
-            });
+            List list=new ArrayList();
             int number=myapp.getNum1();
             number=number+1;
             myapp.setNum1(number);
-            intent.setClass(this, Image6Activity.class);
+
             list=myapp.getlist1();
             list.add(src);
+            Log.i("src",src);
             myapp.setlist1(list);
+            Intent intent = new Intent();
+            intent.setClass(this, Image6Activity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.abc_fade_in,
+                    R.anim.abc_fade_out);
         }
         if(a.equals("1")) {
-            RequestParams requestParams1 = new RequestParams();
-            requestParams1.put("orderid", orderid);
-            requestParams1.put("imageid", imageid);
-            RestClient.post(Constant.waiterUploadImageAfterWash, requestParams1, new JsonHttpResponseHandler() {
-                @Override
-                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-
-                    Log.i("http login jsonobject", response.toString());
-
-
-
-                }
-            });
             int number=myapp.getNum2();
             number=number+1;
             myapp.setNum2(number);
-            intent.setClass(this, photoFinish1Activity.class);
+
+
+            List list=new ArrayList();
             list=myapp.getlist2();
             list.add(src);
             myapp.setlist2(list);
+            Intent intent = new Intent();
+            intent.setClass(this, photoFinish1Activity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.abc_fade_in,
+                    R.anim.abc_fade_out);
 
         }
 
-        startActivity(intent);
-        overridePendingTransition(R.anim.abc_fade_in,
-                R.anim.abc_fade_out	);
 
-        Log.i("click", "push2");
 
     }
     public void click_to_back(View v) {

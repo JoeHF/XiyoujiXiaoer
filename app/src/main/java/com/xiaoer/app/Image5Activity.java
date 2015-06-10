@@ -85,22 +85,10 @@ public class Image5Activity extends Activity {
                     String imageid = response.getString("imageid");
 
                 Log.i("imageid",imageid);
+
                     String a=myapp.getLabel();
 
-                    RequestParams requestParams2 = new RequestParams();
-                    requestParams2.put("imageid", imageid);
-                    requestParams2.put("waiterid", waiterid);
 
-                    RestClient.post(Constant.userUploadIcon, requestParams2, new JsonHttpResponseHandler() {
-                        @Override
-                        public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-
-                            Log.i("http login jsonobjectme", response.toString());
-
-
-
-                        }
-                    });
                     List list=new ArrayList();
                     if(a.equals("0")) {
                         RequestParams requestParams1 = new RequestParams();
@@ -164,11 +152,6 @@ public class Image5Activity extends Activity {
         }
         if(a.equals("1")) {
             List list=new ArrayList();
-            Intent intent = new Intent();
-            intent.setClass(this, photoFinish1Activity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.abc_fade_in,
-                    R.anim.abc_fade_out);
             int number=myapp.getNum2();
             number=number+1;
             myapp.setNum2(number);
@@ -176,6 +159,12 @@ public class Image5Activity extends Activity {
             list=myapp.getlist2();
             list.add(src);
             myapp.setlist2(list);
+            Intent intent = new Intent();
+            intent.setClass(this, photoFinish1Activity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.abc_fade_in,
+                    R.anim.abc_fade_out);
+
         }
 
 

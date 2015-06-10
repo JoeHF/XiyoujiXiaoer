@@ -3,12 +3,16 @@ package com.xiaoer.app;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.xiaoer.app.Constant.Constant;
@@ -30,7 +34,9 @@ public class  showmeActivity extends Activity {
     TextView textview;
     String imageid;
     int flag=0;
+    ImageView image1;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.showme);
@@ -51,11 +57,34 @@ public class  showmeActivity extends Activity {
                     int a=response.length();
                 try {
                     JSONObject jsonObject=response.getJSONObject(a-1);
-                    imageid=jsonObject.getString("imageid");
-                    String url="http://121.40.130.54/xiyouji/upload/"+imageid;
+                    imageid=jsonObject.getString("name");
+                    String url="http://121.40.130.54/xiyouji/upload/"+imageid+".jpg";
                    Log.i("a",url);
-                    ImageView image1=(ImageView) findViewById(R.id.head_photo);
-             //       image1.setImageBitmap(Tool.getNetBitmap(url));
+                    image1=(ImageView) findViewById(R.id.head_photo);
+                    AsyncHttpClient client = new AsyncHttpClient();
+                    client.get(url,new  AsyncHttpResponseHandler()
+                    {
+                        @Override
+                        public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                            if (statusCode == 200) {
+                                //创建工厂对象
+                                BitmapFactory bitmapFactory = new BitmapFactory();
+                                //工厂对象的decodeByteArray把字节转换成Bitmap对象
+                                Bitmap bitmap = bitmapFactory.decodeByteArray(responseBody, 0, responseBody.length);
+                                //设置图片
+                                image1.setImageBitmap(bitmap);
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(int statusCode, Header[] headers,
+                                              byte[] responseBody, Throwable error) {
+                            error.printStackTrace();
+                        }
+                    });
+              //      Tool.getNetBitmap(url);
+
+           //      image1.setImageBitmap(Tool.getNetBitmap(url));
 
                 } catch (JSONException e) {
                     e.printStackTrace();

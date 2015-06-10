@@ -4,19 +4,23 @@
     android:background="@color/lightgray">
     <include layout="@layout/upimaginehead"/>
 
-    <LinearLayout
+    <RelativeLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="470dp"
+        android:layout_height="fill_parent"
         android:background="@color/white">
     <FrameLayout
         android:id="@+id/camera_preview"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"></FrameLayout>
-        </LinearLayout>
+        android:layout_height="470dp"
+        android:background="@color/white"
+        ></FrameLayout>
+
 
     <LinearLayout
-        android:layout_marginBottom="1dp"
-        style="@style/CommonBar_InLinearLayout_Style"
+        android:layout_alignParentBottom="true"
+      android:layout_height="30dp"
+        android:layout_width="fill_parent"
         android:background="@color/lightgray"
         >
         <TextView
@@ -28,7 +32,7 @@
 <LinearLayout
     style="@style/TwoText_Center">
         <Button
-            android:background="@drawable/camera1"
+            android:background="@drawable/camera"
          android:layout_height="fill_parent"
             android:layout_width="80dp"
           android:layout_gravity="center_horizontal"
@@ -47,4 +51,5 @@
             />
 
     </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>
